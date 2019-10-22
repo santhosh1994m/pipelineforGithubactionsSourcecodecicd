@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Building Artifacts.
-      run: |
-        cd frontend
-        pwd && ls -ltr
-        npm install
-        npm run build-dev --if-present
-        pwd && ls -ltr
+   # - name: Building Artifacts.
+   #   run: |
+   #     cd frontend
+   #     pwd && ls -ltr
+   #     npm install
+   #     npm run build-dev --if-present
+   #     pwd && ls -ltr
     - name: Uploading Artifacts to S3 Bucket
       env:
         AWS_BUCKET_NAME: "my-s3-test-frontend-santhosh"
