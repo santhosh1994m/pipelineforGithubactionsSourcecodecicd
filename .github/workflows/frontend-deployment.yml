@@ -17,7 +17,7 @@ jobs:
    #     pwd && ls -ltr
     - name: Uploading Artifacts to S3 Bucket
       env:
-        AWS_BUCKET_NAME: "my-s3-test-frontend-santhosh"
+        AWS_BUCKET_NAME: "my-s3-test-frontend-santhosh1"
         AWS_DEFAULT_REGION: "us-west-2"
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
